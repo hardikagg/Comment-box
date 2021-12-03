@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Computer Science</title>
+    <base href="/">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <!-- <style>
+            input[type=text] {
+                width: 100%;
+                padding: 7px 7px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid #623954;
+                border-radius: 4px;
+                }
+        </style> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="typeahead/typeahead.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input.typeahead').typeahead({
+                name: 'countries',
+                remote: '/home/search?key=%QUERY',
+                limit: 10
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style type="text/css">
+        .typeahead,
+        .tt-query,
+        .tt-hint {
+            border: 2px solid #CCCCCC;
+            border-radius: 8px;
+            font-size: 15px;
+            height: 30px;
+            line-height: 30px;
+            outline: medium none;
+            padding: 8px 12px;
+            width: 396px;
+        }
+
+        .main-nav li {
+            list-style: none;
+            float: left;
+        }
+
+        .typeahead {
+            background-color: #FFFFFF;
+        }
+
+        .typeahead:focus {
+            border: 2px solid #0097CF;
+        }
+
+        .tt-query {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        }
+
+        .tt-hint {
+            color: #999999;
+        }
+
+        .tt-dropdown-menu {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 12px;
+            padding: 8px 0;
+            width: 422px;
+        }
+
+        .tt-suggestion {
+            font-size: 15px;
+            line-height: 15px;
+            padding: 3px 20px;
+        }
+
+        .tt-suggestion.tt-is-under-cursor {
+            background-color: #0097CF;
+            color: #FFFFFF;
+        }
+
+        .tt-suggestion p {
+            margin: 0;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 7px 7px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            margin-left: 5px;
+            box-sizing: border-box;
+            border: 1px solid transparent;
+            border-radius: 20px 0 0 20px;
+            height: 34px;
+            display: block;
+            position: relative;
+        }
+
+        .footer439 {
+            text-align: left;
+            background-color: rgba(226,232,240);
+            color: #a0aec0;
+            font-family: sans-serif;
+            height: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 8px 5px 0 125px;
+
+
+        }
+
+        .h3-234 {
+            color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container123 {
+            display: flex;
+            width: 100%;
+            background-color: #623955;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1px;
+
+        }
+
+        .heading246 {
+            margin: 0px 45px;
+            padding: 20px 0px;
+        }
+
+        .ul233 {
+            margin: 14px 0px;
+            list-style-type: none;
+        }
+
+        .li298 {
+            margin: 8px;
+        }
+
+        .hello84 {
+            color: white;
+            font-size: 10px;
+            text-decoration: none;
+            
+        }
+
+        
+
+
+        
+
+        .input305 {
+            margin-top: 5px;
+            width: 100%;
+            height: 30px;
+            background-color: #623955;
+            border: 1px solid #8A2BE2;
+            padding-left: 5px;
+
+        }
+
+        .submit278 {
+            background-color: white;
+            color: skyblue;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            color: white;
+
+        }
+
+        .main-foot599 {
+            right: 0;
+            bottom: 0;
+            left: 0;
+            /* padding: 1rem; */
+            /* background-color: #0f0c29; */
+            color: white;
+            /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+            /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .margin472 {
+            margin-bottom: 9px;
+        }
+    </style>
+    <style>
+        .mainn {
+            
+            padding-left: 48px;
+            margin-left: 38px;
+            margin-right: -50rem;
+            /* border-left: gray solid;
+            border-width: 1px; */
+        }
+
+        .asi {
+            /* padding-right: 10px; */
+            /* padding-bottom: 50px; */
+            /* margin-right: 50px;
+            
+            
+            box-shadow: 5px;
+            
+            height: 100%; */
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+             width: 260px; /* Set the width of the sidebar */
+             position: fixed; /*Fixed Sidebar (stay in place on scroll) */
+             z-index: 0;/* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            margin-top: 50px;
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 20px;
+           
+            margin-left: 0px;
+            background-color: #4e2e44;
+            /* clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); */
+
+        }
+
+        .cardArt {
+            background-color: lightgray;
+            border: 0;
+            width: 100%;
+            padding-top: 25px;
+            border-radius: 5px;
+            padding-left: 55px;
+            padding-right: 55px;
+            padding-bottom: 55px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .asi {
+                display: none;
+
+            }
+
+            .mainn {
+                margin-top: 0rem;
+                margin-left: -290px;
+                margin-right: 0rem;
+            }
+
+            .cardArt{
+                width: 100%;
+            }
+
+        }
+
+        @media only screen and (max-width: 992px) and (min-width: 768px) {
+            .mainn {
+                margin-top: 2rem;
+                margin-left: -26rem;
+                margin-right: 0rem;
+            }
+            .asi {
+                display: none;
+
+            }
+
+            .cardArt{
+                width: 100%;
+            }
+
+        }
+
+        @media only screen and (max-width: 1100px) and (min-width: 992px) {
+            .cardArt {
+                width: 100%;
+                
+            }
+
+            .searchform {
+                display: none;
+            }
+
+            .mainn{
+                margin-left: 0rem;
+                margin-right: -10rem;
+            }
+        }
+
+        @media only screen and (max-width: 1200px) and (min-width: 1101px) {
+            .cardArt {
+                width: 100%;
+                
+            }
+
+            .searchform {
+                display: none;
+            }
+
+            .mainn{
+                margin-left: 0rem;
+                margin-right: -18rem;
+            }
+        }
+
+        @media only screen and (max-width: 1300px) and (min-width: 1201px) {
+            .cardArt {
+                width: 100%;
+                
+            }
+
+            .searchform {
+                display: none;
+            }
+
+            .mainn{
+                margin-left: 0rem;
+                margin-right: -20rem;
+            }
+        }
+
+        @media only screen and (max-width: 1470px) and (min-width: 1301px) {
+            .cardArt {
+                width: 100%;
+                
+            }
+
+            .searchform {
+                display: none;
+            }
+
+            .mainn{
+                margin-left: 0rem;
+                margin-right: -30rem;
+            }
+        }
+    </style>
+      <style>
+        /* The switch - the box around the slider */
+                  .switch {
+                  position: relative;
+     display: inline-block;
+     width: 60px;
+     height: 34px;
+   }
+
+   /* Hide default HTML checkbox */
+   .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+   }
+
+   /* The slider */
+   .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #ccc;
+     -webkit-transition: .4s;
+     transition: .4s;
+   }
+
+   .slider:before {
+     position: absolute;
+     content: "";
+     height: 26px;
+     width: 26px;
+     left: 4px;
+     bottom: 4px;
+     background-color: white;
+     -webkit-transition: .4s;
+     transition: .4s;
+   }
+
+   input:checked + .slider {
+     background-color: white;
+     
+   }
+
+   input:focus + .slider {
+     box-shadow: 0 0 1px white;
+   }
+
+   input:checked + .slider:before {
+     -webkit-transform: translateX(26px);
+     -ms-transform: translateX(26px);
+     transform: translateX(26px);
+     background-color: black;
+   }
+   .newPage{
+        -webkit-transform: translateX(26px);
+     -ms-transform: translateX(26px);
+     transform: translateX(26px);
+     
+     
+   }
+
+
+   /* Rounded sliders */
+   .slider.round {
+     border-radius: 34px;
+     
+   }
+
+   .slider.round:before {
+     border-radius: 50%;
+   }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- /HEADER -->
+
+    <!-- NAVIGATION -->
+    <div id="navigation">
+        <div id="header" style="padding: 0px;">
+            <div class="container">
+
+
+                <!-- Mobile nav toggle-->
+                <li class="nav-toggle">
+                    <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
+                </li>
+                <!-- / Mobile nav toggle -->
+
+            </div>
+
+            <!-- header -->
+        </div>
+
+        <!-- container -->
+        <div class="container">
+            <div id="responsive-nav">
+
+
+                <!-- menu nav -->
+                <div class="menu-nav">
+
+                    <ul class="menu-list">
+                        <ul class="menu-list">
+                            <% if(user){ %>
+                            <li style="float: right;font-weight: bold;"><a href="/auth/logout" id="user_div"
+                                    onclick="signOut()" class="button" style="color:white">LOGOUT</a></li>
+                            <li style="float: right;font-weight: bold;"><a href="/profile">
+                                    <!-- <img  src="http://geeksportal.org/ProfileImages/<%=photo%>" onerror="this.style.display='none'"  style=" width:30px ; border-radius:20px;" align="center"> -->
+                                    <!-- <img  src="https://geeksportal.org/ProfileImages/<%=photo%>" onerror="this.style.display='none'"  style=" width:30px ; border-radius:20px;" align="center"> -->
+                                    <img src="/ProfileImages/<%=photo%>" onerror="this.style.display='none'"
+                                        style=" width:30px ;height:30px; border-radius:20px;" align="center">
+                                    <img src="<%=photo%>" onerror="this.style.display='none'"
+                                        style=" width:30px ; height:30px; border-radius:20px;" align="center">
+                                    <!-- <img  src="http://localhost:3000/ProfileImages/defaultimg.jpg" onerror="this.style.display='none'"  style=" width:30px ; border-radius:20px;" align="center"> -->
+                                    <!-- <img src=%= photo %>   style=" width:30px ; border-radius:20px;"> -->
+                                </a></li> <% }else{ %>
+                            <li style="float: right;font-weight: bold;"><a href="/auth/login" id="login_div"
+                                    class="button" style="color:white">LOGIN</a></li>
+                            <% } %>
+
+
+
+
+
+                            <li><a href="/home">Home</a></li>
+                            <li class="dropdown default-dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="true" href="">Algorithms <i class="fa fa-caret-down"></i></a>
+                                <ul class="custom-menu">
+                                    <li><a href="/Analysis-of-Algo">Analysis of algorithm</a></li>
+                                    <li><a href="/searching-sorting">Searching and Sorting</a></li>
+                                    <li><a href="/greedy-Algo">Greedy Algorithms</a></li>
+                                    <li><a href="#">Dynamic Programming</a></li>
+                                    <li>
+                                        <a href="string-Algo">String Algorithms</a></li>
+                                    <li>
+
+                                        <a href="/backtracking">Backtracking</a></li>
+                                    <li>
+                                        <a href="/divide-conquer">Divide and Conquer</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown default-dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="true" href="">DS <i class="fa fa-caret-down"></i></a>
+                                <ul class="custom-menu">
+                                    <li>
+                                        <a href="/ds">Data Structures</a></li>
+                                    <li>
+                                        <a href="/array">Array</a></li>
+                                    <li>
+
+                                        <a href="/list">Linked List</a></li>
+                                    <li>
+                                        <a href="/stack">Stack</a></li>
+                                    <li>
+                                        <a href="/queue">Queue</a> </li>
+                                    <li>
+
+                                        <a href="/bt">Binary Tree</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown default-dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="true" href="">Languages <i class="fa fa-caret-down"></i></a>
+                                <ul class="custom-menu">
+                                    <li><a href="/c">C</a></li>
+                                    <li><a href="/cpp">C++</a></li>
+                                    <li><a href="/java">JAVA</a></li>
+                                    <li><a href="/py">Python</a></li>
+                                    <li><a href="/sql">SQL</a></li>
+                                    <li><a href="/php">PHP</a></li>
+                                    <li><a href="/javascript">Javascript</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown default-dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="true" href="">Students <i class="fa fa-caret-down"></i></a>
+                                <ul class="custom-menu">
+                                    <li><a href="/campus">Campus Programs</a></li>
+                                    <li><a href="/project">Projects</a></li>
+                                    <li><a href="/place">Placemant cources</a></li>
+
+                                </ul>
+                            </li>
+                            <!-- <li>
+                                <form class="form-inline" action="/home" method="POST"> -->
+                            <!-- <li><input type="text"  name="search" class="typeahead tt-query" autocomplete="off" spellcheck="false"  placeholder="Search"><button type="submit" style="margin-top: 0px;" class="btn btn-default"><i class="fa fa-search"></i></button></li> -->
+                            <!-- <div class="input-group">
+                                        <input type="text" class="form-control typeahead tt-query" size="10"
+                                            name="search" autocomplete="off" spellcheck="false"
+                                            placeholder="Search for...">
+                                        <span class="input-group-btn"> -->
+                            <!-- <button class="btn btn-default" type="button">Go!</button> -->
+                            <!-- <button style="height: 37px;" type="submit" class="btn btn-default"><i
+                                                    class="fa fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </li> -->
+                            <li class="dropdown default-dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="true" href="">GATE <i class="fa fa-caret-down"></i></a>
+                                <ul class="custom-menu">
+                                    <li><a href="/gnote">Gate notes</a></li>
+                                    <li><a href="/gcs">Gate CS Corner</a></li>
+                                    <li><a href="/gpaper">Gate Papers</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Codes</a></li>
+                            <li><a href="#">Puzzles</a></li>
+                            <li><a href="/compose">Contribute</a></li>
+                            <li>
+                                <form class="form-inline searchform" action="/home" method="POST">
+                                    <!-- <li><input type="text"  name="search" class="typeahead tt-query" autocomplete="off" spellcheck="false"  placeholder="Search"><button type="submit" style="margin-top: 0px;" class="btn btn-default"><i class="fa fa-search"></i></button></li> -->
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" size="10" name="search"
+                                            autocomplete="off" spellcheck="false" placeholder="Search"
+                                            style="border-radius: 20px 0 0 20px; border: 0; background-color: white;">
+                                        <span class="input-group-btn">
+                                            <!-- <button class="btn btn-default" type="button">Go!</button> -->
+                                            <button style="height: 34px; border-radius: 0 20px 20px 0; border: 0;"
+                                                type="submit" class="btn btn-default"><i
+                                                    class="fa fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </li>
+
+                        </ul>
+                </div>
+                <!-- menu nav -->
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /NAVIGATION -->
+
+
+
+    <!-- section -->
+    <div class="section" style="padding: 5px; margin-right: 0;">
+        <!-- container -->
+        <div class="container" style="margin-top: 0px; margin-left: 0; margin-right: 0;">
+            <!-- <div class="jumbotron static-slider" style="padding: 10px; margin-top: 100px;">
+                <h4 class="text-center"><%= head %> </h4>
+
+            </div> -->
+
+
+
+            <!-- Sidebar -->
+            <div class="col-sm-3 asi" id="cart">
+                <!-- <div class="sidebar-box">
+                                <h4>Categories Archives</h4>
+                                <div class="list-group list-group-root">
+                                    <a class="list-group-item active " href="/home" id="allarticles-Button">All Articles</a>
+                                   
+                               
+                                    <a class="list-group-item " href="/home/type/Puzzle" id="puzzle-Button" >Puzzle</a>
+                                        <a class="list-group-item " href="/home/type/Article" id="article-Button">Article</a>
+                                        <a class="list-group-item" href="/home/type/Code" id="code-Button" >Code</a>
+                                   
+                                 </div>
+                                 <h4>Difficulty level</h4>
+                                 <div class="customSelect" id="gta"  style="text-align:center; font-weight: bold;font-size:15px;color:black;">
+                                     
+                                     <select id="difficultlevel" onchange="location = this.value;" style="width:10em;">
+                                     <option selected>Select</option>
+                                     <option  value="/home/Level/easy">Easy</option>
+                                     <option value="/home/Level/medium">Medium</option>
+                                     <option value="/home/Level/hard">Hard</option>
+                                     </select>
+                                     </div>
+                                     <br>
+                                </div> -->
+                <a href="/ds"><button type="button" class="btn btn-default btn-lg btn-block asideBtn">Data
+                        Structures</button></a>
+                <a href="/Analysis-of-Algo"><button type="button"
+                        class="btn btn-default btn-lg btn-block asideBtn">Algorithms</button></a>
+                <a href="/sql"><button type="button" class="btn btn-default btn-lg btn-block asideBtn">DBMS</button></a>
+                <button type="button" class="btn btn-default btn-lg btn-block asideBtn">Computer Organization</button>
+                <button type="button" class="btn btn-default btn-lg btn-block asideBtn">Computer Networks</button>
+                <button type="button" class="btn btn-default btn-lg btn-block asideBtn">Puzzles</button>
+                <a href="/gnote"><button type="button" class="btn btn-default btn-lg btn-block asideBtn">GATE
+                        Notes</button></a>
+                <a href="/gpaper"><button type="button" class="btn btn-default btn-lg btn-block asideBtn">GATE
+                        Papers</button></a>
+                <a href="/questionPapers"><button type="button" class="btn btn-default btn-lg btn-block asideBtn">CSE/IT Question Papers</button></a>
+                       <hr>
+
+
+                </div>
+               
+            
+            <!-- <div class="col-sm-8 " style="border: none;">
+                               
+                                <ul class="z-depth-0 articlesView" >
+                              
+                                </ul>
+                        </div>
+                         -->
+
+
+            <!-- PENDING SINGLE ARTICLE LIST   -->
+            <div class="col-sm-8" style="margin-top: 100px; padding-right: 10px; margin-left: 200px; margin-right: 0;">
+                <!-- <ul class=" z-depth-0 " style="border: none;"> -->
+                <% if(posts.length==0){ %>
+                <h4 style="color: #623954; text-align: center;">No results Found</h4>
+                <a href="/request">
+                    <h6 style=" text-decoration: underline; text-align: center; margin-bottom: 50rem;">You can request your Article here!!
+                    </h6>
+                </a>
+                
+                <%  } %>
+                <div class="row mainn">
+
+                    <% posts.forEach(function(post){ %>
+
+                    <% var Id="h"+post.Id %>
+                    <% var Idd="ht"+post.Id %>
+                    <% var tags=[] %>
+                    <% if(post.Title){ %>
+                    <% tags=post.Title.split(",")} %>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6" style="margin-right: 0px;">
+
+                        <div class="card CardArticle cardArt" style="margin-left: 1rem; margin-right: 10rem;">
+                            <div class="card-body">
+                                <div class="col-12 text-muted text-center"
+                                    style="font-size: 18px; margin-bottom: 10px;" id="smallHead">Featured Article
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <h3 class="card-title" id="cardHead" style="margin-bottom: 2.5rem; font-size: 34px;"><%= post.Head %> </h3>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="font-size: 22px;">
+                                    <div class="col-12" id=<%= Idd %>>
+                                        <div id=<%= Id %> class="d-none"><%= post.Blog %></div>
+                                    </div>
+                                    <hr style="border-top: gray solid; margin-top: 50px;">
+
+                                    <!-- <div class="col-12">
+                                                </div> -->
+                                    <script>
+                                        var a = "<%= Idd %>";
+                                        var b = "<%= Id %>";
+                                        var txt = document.getElementById(b).textContent;
+                                        var s = txt.substring(0, 170);
+                                        //       for(let i=1000;i<s.length;i++){
+                                        //       if(s.charAt(i)!=='<' && s.charAt(i)!=='>' && s.charAt(i)!=='/' ){
+                                        //           s=s.substring(0,i);
+                                        //           break;
+                                        //       }
+                                        //   }
+                                        document.getElementById(a).innerHTML = s + '...';
+                                    </script>
+                                </div>
+
+
+                                <div class="row">
+                                    <% tags.forEach(tag=>{ %>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6" style="margin: 0; padding: 0;">
+                                        <a class="ArticleLink" href="/home/tag/<%= tag %>" id="tags"> <b style="font-size: 18px; padding: 5px 5px 5px 5px;"
+                                                class="text-center"><%= tag %> </b></a>
+                                    </div>
+                                    <% }) %>
+                                </div>
+                                <% if(tags.length===0){%><br><%}%>
+                                   
+                               
+                                <div class="row">
+                                    <div class="col-12 text-center" style="margin-top: 1.8rem;">
+                                        <a class="ArticleLink"
+                                            href="/home/<%= post.Head %>-<%= post.Id %>" id="readMore"><b style="padding: 5px 5px 5px 5px;">Read more...</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%})%>
+        </div>
+        <style>
+            #page a {
+                margin-left: 73%;
+                padding: 5px;
+                border: 1px solid #623954;
+                text-align: center;
+                font-weight: bold;
+                text-decoration: #623954;
+            }
+
+            #page a:hover {
+                color: aliceblue;
+                background-color: #623954;
+            }
+
+            .active {
+                color: aliceblue;
+                background-color: #623954;
+            }
+        </style>
+        <div class="row" <%if(lastPage===0||lastPage===2){%>style="visibility: hidden;" <%}%>>
+                    <section id="page" class="text-center">
+                        <% if(currentPage!==1){%><a href="/home<%if(tag===0){%>?page=<%= previousPage %><%}else{%>/tag/<%=title%>?page=<%= previousPage %><%}%>"><i class="fa fa-arrow-left"></i></a><%}%>
+                        <% if(currentPage!==1&&previousPage!==1){%><a href=" /home?page=1">1</a><span><b>&nbsp; . . .
+                </b></span><%}%>
+                        <% if(hasPreviousPage){ %>
+            <a href="/home<%if(tag===0){%>?page=<%= previousPage %><%}else{%>/tag/<%=title%>?page=<%= previousPage %><%}%>"><%= previousPage %> </a>
+                        <%} %>
+                        <a href="
+                /home<%if(tag===0){%>?page=<%= currentPage %><%}else{%>/tag/<%=title%>?page=<%= currentPage %><%}%>" class="active"><%= currentPage %>
+                </a>
+
+                <% if(hasNextPage){ %>
+                <a href="/home<%if(tag===0){%>?page=<%= nextPage %><%}else{%>/tag/<%=title%>?page=<%= nextPage %><%}%>"><%= nextPage %> </a>
+                        <%} %>
+                        <% if(currentPage!==lastPage&&nextPage!==lastPage){%><span><b>&nbsp; . . . </b></span><a href="
+                    /home?page=<%= lastPage %>"><%= lastPage %></a><%}%>
+                        <% if(currentPage!==lastPage){%><a href="/home<%if(tag===0){%>?page=<%= nextPage %><%}else{%>/tag/<%=title%>?page=<%= nextPage %><%}%>"><i class="fa fa-arrow-right"></i></a><%}%>
+
+                    </section>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        </main>
+        <div class=" footer-bottom" style="float: right;padding-right: 10px;">
+
+                    <a id="backtotop" href="/home/#top" style="float: right;"><i class="fa fa-chevron-up"></i></a>
+        </div>
+    </div>
+    </div>
+    <!-- /row -->
+    </div>
+    <!-- /container -->
+    </div>
+    <!-- /section -->
+    <!-- Sidebar -->
+
+
+    <!-- FOOTER -->
+    <!-- <%-include('includes/footerLinks.ejs') %> -->
+    <footer class="main-foot599" id="footer">
+        <div class="container123">
+            
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-lg-2 col-md-2">
+                    <div id="switchId" class="heading246" style="margin-top:15px;">
+                        <label class="switch">
+                           <input type="checkbox" id="dark-mode">
+                           <span class="slider round"></span>
+                           
+                         </label><br><span id="mode">LIGHT MODE</span>
+                   </div></div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="heading246">
+                        <ul class="ul233">
+                            <a href="/request" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Didn't find what you were
+                                    searching for?</b>
+                                </li>
+                            </a>
+                            <a href="/compose" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Write an article</b></li>
+                            </a>
+                            <a href="/request" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Suggest a Topic</b></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <div class="heading246">
+                        <ul class="ul233">
+                            <a href="/internships" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Internship</b></li>
+                            </a>
+                            <a href="#" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Sitemap</b></li>
+                            </a>
+                            <a href="/contactus" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Contact us</b></li>
+                            </a>
+                            <a href="/contactus" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Give Feedback</b></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <div class="heading246">
+                        <ul class="ul233">
+                            <a href="/aboutus" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>About us </b></li>
+                            </a>
+                            <a href="/cookie" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Privacy Policy</b></li>
+                            </a>
+                            <a href="/cookie" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Cookie Policy</b></li>
+                            </a>
+                            <a href="/tc" class="hello84">
+                                <li class="li298" style="font-size: 1.5rem;"><b>Terms and Conditions</b></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="heading246">
+                        <h3 class="h3-234" style="font-size: 1.5rem;"><b>Subscribe to newsletter via email</b></h3>
+                        <form action="/post" method="POST">
+                            <div class="margin472">
+                                <input type="email" placeholder="Email" class="input305"
+                                    style="border-color: white; border-radius: 2px;">
+                                <input type="submit" value="Subscribe" class="submit278 input305"
+                                    style="color: black; font-weight: lighter; border-color: black;">
+                            </div>
+                        </form>
+                        <div class="icons" style="margin-top: 2rem;">
+                            <div class="row">
+                               
+                               <div class="col-lg-2 col-md-2 col-sm-1"><a href="#" class="fa fa-facebook hello84" style="font-size: 25px;"></a></div>
+                               <div class="col-lg-2 col-md-2 col-sm-1"><a href="#" class="fa fa-twitter hello84" style="font-size: 25px;"></a></div>
+                               <div class="col-lg-2 col-md-2 col-sm-1"><a href="#" class="fa fa-instagram hello84" style="font-size: 25px;"></a></div>
+                               <div class="col-lg-2 col-md-2 col-sm-1"><a href="#" class="fa fa-linkedin hello84" style="font-size: 25px;"></a></div>
+                               <div class="col-lg-2 col-md-2 col-sm-1"><a href="#" class="fa fa-github hello84" style="font-size: 25px;"></a></div>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer439" style="height: 4rem; color: #a0aec0;">  © All Rights Reserved
+       
+      </div>
+    </footer>
+    <script>
+        $(window).scroll(() => { 
+        // Distance from top of document to top of footer.
+        topOfFooter = $('#footer').position().top;
+        // Distance user has scrolled from top, adjusted to take in height of sidebar (570 pixels inc. padding).
+        scrollDistanceFromTopOfDoc = $(document).scrollTop() + 665;
+        // Difference between the two.
+        scrollDistanceFromTopOfFooter = scrollDistanceFromTopOfDoc - topOfFooter;
+
+        // If user has scrolled further than footer,
+        // pull sidebar up using a negative margin.
+        if (scrollDistanceFromTopOfDoc > topOfFooter) {
+        $('#cart').css('margin-top',  0 - scrollDistanceFromTopOfFooter);
+        } else  {
+        $('#cart').css('margin-top', 0+49);
+        }
+        });
+        var x=document.cookie.split('=');
+               if(x[1]==="dark"){
+                  
+                   var cards=document.querySelectorAll(".cardArt");
+                   cards.forEach(card=>{
+                    card.style.backgroundColor="#4b5d67";
+                    card.querySelector("#cardHead").style.color="#dadada"
+                    card.querySelector("#smallHead").style.color="#322f3d"
+                    card.querySelector("#readMore").style.color="#ececec"
+                    var tags=card.querySelectorAll("#tags");
+                    tags.forEach(tag=>{
+                        tag.style.color="#322f3d"
+                    })
+                    
+                   })
+                    document.body.style.backgroundColor="#222831";
+                    document.body.style.color="#f8fbf8";
+                    
+               }
+    </script>
+    <style>
+        .addHover>b:hover{
+            color: white;
+        }
+    </style>
+<script>
+    function enableDarkMode(){
+                   var x=document.cookie.split('=');
+                   var dark=document.getElementById("dark-mode");
+                   var now = new Date();
+              now.setMonth( now.getMonth() + 11 );
+                   if(!x[1]||x[1]==="light"){
+                        document.cookie = "mode=dark; expires="+now.toUTCString()+ "path=/;";
+                        document.getElementById("mode").innerText="DARK MODE";
+                        document.body.style.backgroundColor="#222831";
+                        document.body.style.color="#f8fbf8";
+                        var cards=document.querySelectorAll(".cardArt");
+                   cards.forEach(card=>{
+                    card.style.backgroundColor="#4b5d67";
+                    card.querySelector("#cardHead").style.color="#dadada"
+                    card.querySelector("#smallHead").style.color="#322f3d"
+                    card.querySelector("#readMore").style.color="#ececec"
+                    var tags=card.querySelectorAll("#tags");
+                    tags.forEach(tag=>{
+                        tag.style.color="#322f3d"
+                    })
+                    
+                   })
+                
+                       
+                   }else if(x[1]==='dark'){
+                        document.cookie = "mode=light; expires="+now.toUTCString()+ "path=/;";
+                        document.getElementById("mode").innerText="LIGHT MODE";
+                        document.body.style.backgroundColor="white";
+                        document.body.style.color="#4a4e5a";
+                        var cards=document.querySelectorAll(".cardArt");
+                   cards.forEach(card=>{
+                    card.style.backgroundColor="lightgray";
+                    card.querySelector("#cardHead").style.color="black"
+                    card.querySelector("#smallHead").style.color="gray"
+                    card.querySelector("#readMore").style.color="#623954"
+                    card.querySelector("#readMore").classList.add("addHover");
+                    var tags=card.querySelectorAll("#tags");
+                    tags.forEach(tag=>{
+                        tag.style.color="#623954";
+                        tag.classList.add("addHover");
+                    })
+                    
+                   })
+              }
+         }
+              var dark=document.getElementById("dark-mode");
+              dark.addEventListener("click", enableDarkMode);
+
+              var x=document.cookie.split('=');
+                   var dark=document.getElementById("dark-mode");
+                   if(x[1]==="dark"){
+                     dark.checked="true";
+                     document.getElementById("mode").innerText="DARK MODE";}
+</script>
+
+    <!-- /FOOTER -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+            // $('.list-group').on('click', '.list-group-item', function() {
+            //   $(this).addClass('active').siblings().removeClass('active');
+            // });
+          // $("#allarticles-Button").on("click",function(){
+          //   $("#allarticles-Button").addClass("active");
+          //   $("#puzzle-Button").removeClass("active");
+          //   $("#article-Button").removeClass("active");
+          //   $("#code-Button").removeClass("active");
+          // })
+          // $("#puzzle-Button").on("click",function(){
+          //   $("#allarticles-Button").removeClass("active");
+          //   $("#puzzle-Button").addClass("active");
+          //   $("#article-Button").removeClass("active");
+          //   $("#code-Button").removeClass("active");
+          // })
+          // $("#article-Button").on("click",function(){
+          //   $("#allarticles-Button").removeClass("active");
+          //   $("#puzzle-Button").removeClass("active");
+          //   $("#article-Button").addClass("active");
+          //   $("#code-Button").removeClass("active");
+          // })
+          // $("#allarticles-Button").on("click",function(){
+          //   $("#allarticles-Button").addClass("active");
+          //   $("#puzzle-Button").removeClass("active");
+          //   $("#article-Button").removeClass("active");
+          //   $("#code-Button").removeClass("active");
+          // })
+    </script>
+
+
+</body>
+
+</html>
